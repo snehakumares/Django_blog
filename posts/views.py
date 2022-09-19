@@ -7,3 +7,7 @@ def index(request):
         'posts':posts,
     }
     return render(request, 'index.html', context)
+
+def post(request, id):
+    post = Post.objects.get(id=id)
+    return render(request, "post.html", {"post": post})
