@@ -27,51 +27,57 @@
 
 <body>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      <h1>My Blog</h1>
-      <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>My Blog</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="../">Home</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-  </section><!-- End Hero -->
+  </header><!-- End Header -->
 
-  <main id="main">
+  <main id="main"></main>
 
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Blogs</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        {% for x in posts %}
-          {% if forloop.counter0|divisibleby:4 %} 
-            <div class="row">
-          {% endif %}
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <a href="post/{{ x.id }}">
-              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon"><i class="bx bx-file"></i></div>
-                <h4 class="title">{{ x.title }}</h4>
-                <p class="description">{{ x.created_time }}</p>
-              </div>
-            </a>
-          </div>
-          {% if forloop.counter != 0 %}
-            {% if forloop.counter|divisibleby:4 %}
+        <div class="row gy-4">
+
+
+          <div class="col-lg-12">
+            <div class="portfolio-description">
+              <h2>{{ post.title }}</h2>
+              <h6>{{ post.created_time }}</h6>
+              <br>
+              <br>
+              <p style="text-align: justify;">
+                {{ post.body }}
+                {{ post.body }}
+                {{ post.body }}
+                {{ post.body }}
+                {{ post.body }}
+                {{ post.body }}
+                {{ post.body }}
+                {{ post.body }}
+                {{ post.body }}
+              </p>
             </div>
-            <br><br>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        
+          </div>
+
+        </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
- 
   </main><!-- End #main -->
 
 
