@@ -20,10 +20,14 @@
 ```sh
   py -m pip install Django
 ```
-5. Download the code and copy it inside the folder 'project-name'
+5. Create project
+```sh
+   django-admin startproject blog
+```
+6. Download the code and copy it inside the folder blog 
 
 ## Run the project
 ```sh
-cd word_counter
+cd blog
 py manage.py runserver
 ```
