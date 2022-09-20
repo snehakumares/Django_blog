@@ -25,6 +25,7 @@
    django-admin startproject blog 
 ```
    This will create a folder named blog which contains a file manage.py and a folder named blog
+```
    blog
    ├── manage.py
    ├── blog
@@ -33,6 +34,7 @@
        ├── settings.py
        ├── urls.py
        ├── wsgi.py
+```
         
 6. Download the code. Replace the contents of the main folder blog, with the downloaded code
 ## Run the project
