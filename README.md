@@ -34,9 +34,9 @@
        ├── settings.py
        ├── urls.py
        ├── wsgi.py
-```
-        
+```   
 6. Download the code. Replace the contents of the main folder blog, with the downloaded code
+
 ## Run the project
 ```sh
 cd blog
